@@ -1,11 +1,11 @@
 # FTPmap
 Simple FTP anonymous cred testing
-##Require
+## Require
 Python3
 ftplib
-##Install
+## Install
 pip3 install ftplib
-##Using
+## Using
 python3 FTPmap.py 
 Simple FTP anonymous cred testing v0.6 - ATHENA team
 [1]: Manual testing (manual input)
