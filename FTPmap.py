@@ -66,7 +66,7 @@ elif choice == "2":
     while i < len(c):
         print('\nTesting IP/host:',c[i])
         result.write('\r')
-        result.write('<p>' + 'ftp://' + c[i] + '\r\n' + '</p>')
+        result.write('<p>' +'<a href=ftp://'+ c[i] +'>' + c[i] + '\r\n' + '</a>' + '</p>')
         check_ftp()
         i += 1
     result.close()
