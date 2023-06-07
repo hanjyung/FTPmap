@@ -24,6 +24,7 @@ i=0
 def check_ftp():
     try:
         ftp = ftplib.FTP(c[i],'anonymous','', timeout=1)
+	ftp.encoding='latin-1'
         print('File List: ')
         files = ftp.dir()
         files2 = ftp.nlst()
@@ -56,7 +57,7 @@ if choice == "1":
 
 elif choice == "2":
     name = input("Input list's name: ")
-    result = input("Input results' name: ")
+    result = input("Results' name: ")
     with open(name) as a:
         b=a.readlines()
         
